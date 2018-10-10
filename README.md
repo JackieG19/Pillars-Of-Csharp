@@ -1,5 +1,5 @@
-## tdd Csharp
+### tdd Csharp
 
-## TDD C# by Elias Fofanov
+TDD C# practice by Elias Fofanov
 
 *_EngineerSpock_*
