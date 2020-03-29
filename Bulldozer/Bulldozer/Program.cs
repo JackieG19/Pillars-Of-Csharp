@@ -6,6 +6,9 @@ namespace Bulldozer
     {
         public static void Main(string[] args)
         {
+            var worker = new Workers();
+            worker.Count(4);
+            worker.Count(5);
         }
 
         public class Workers
@@ -15,20 +18,19 @@ namespace Bulldozer
                 // constructor
             }
         }
-        // worker count the number of things
+        
         public void Count(int number)
         {
-            // if total is equal to null is not ready yet
             if (Total == null)
+            {
                 Total = 0;
-           
-
+            }
             Total = Total + number;
             Console.WriteLine(Total.ToString());
 
         }
 
-        // to store the number and add it, create a class variable
+        // so every time Count is run adds one to the Total
         public int Total { get; set; }
     }
 }
