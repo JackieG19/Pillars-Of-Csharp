@@ -11,7 +11,6 @@ namespace Bulldozer
             var alien = new Alien();
         }
 
-       // using Inheritance to avoid writing too much code
         public class GeneralObject
         {
             public GeneralObject()
@@ -23,15 +22,36 @@ namespace Bulldozer
             public string color { get; set; }
         }
 
-        // tranfer the properties from  to Man
-        public class Man : GeneralObject
+       // Inheritance the properties from GeneralObject
+        public class Human : GeneralObject
+        {
+            public Human()
+            {
+                // constructor
+            }
+
+            public string name { get; set; }
+        }
+
+        // will Inheritance 2 classes
+        public class Man : Human
         {
             public Man ()
             {
                 // constructor
             }
 
-            public string name { get; set; }
+            //public string name { get; set; }
+        }
+
+        public class Woman : Human
+        {
+            public Woman ()
+            {
+                // constructor
+            }
+
+            //public string name { get; set; }
         }
 
         public class Kart
