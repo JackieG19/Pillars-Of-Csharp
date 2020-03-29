@@ -1,0 +1,6 @@
+/Users/danielgutierrez/Desktop/Bulldozer/Bulldozer/bin/Debug/Bulldozer.exe
+/Users/danielgutierrez/Desktop/Bulldozer/Bulldozer/bin/Debug/Bulldozer.pdb
+/Users/danielgutierrez/Desktop/Bulldozer/Bulldozer/obj/Debug/Bulldozer.csprojAssemblyReference.cache
+/Users/danielgutierrez/Desktop/Bulldozer/Bulldozer/obj/Debug/Bulldozer.csproj.CoreCompileInputs.cache
+/Users/danielgutierrez/Desktop/Bulldozer/Bulldozer/obj/Debug/Bulldozer.exe
+/Users/danielgutierrez/Desktop/Bulldozer/Bulldozer/obj/Debug/Bulldozer.pdb
