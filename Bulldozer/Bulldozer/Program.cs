@@ -2,7 +2,7 @@ using System;
 
 namespace Bulldozer
 {
-      class MainClass
+    class MainClass
     {
         public static void Main(string[] args)
         {
@@ -11,17 +11,27 @@ namespace Bulldozer
             var alien = new Alien();
         }
 
-        public class Man
+       // using Inheritance to avoid writing too much code
+        public class GeneralObject
+        {
+            public GeneralObject()
+            {
+                // constructor
+            }
+            // common properties
+            public bool move { get; set; }
+            public string color { get; set; }
+        }
+
+        // tranfer the properties from  to Man
+        public class Man : GeneralObject
         {
             public Man ()
             {
                 // constructor
             }
 
-            // define if the man can move or not move
-            public bool move { get; set;}
             public string name { get; set; }
-            public string color { get; set; }
         }
 
         public class Kart
@@ -30,9 +40,7 @@ namespace Bulldozer
             {
                 // constructor
             }
-            public bool move { get; set; }
             public string manufactor { get; set; }
-            public string color { get; set; }
         }
 
         public class Alien
@@ -41,9 +49,7 @@ namespace Bulldozer
             {
                 // constructor
             }
-            public bool move { get; set; }
             public string planet { get; set; }
-            public string color { get; set; }
         }
     }
 }
