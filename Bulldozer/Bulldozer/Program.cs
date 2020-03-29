@@ -1,32 +1,49 @@
-﻿using System;
+using System;
 
 namespace Bulldozer
 {
-    class MainClass
+      class MainClass
     {
         public static void Main(string[] args)
         {
-            var dozer = new BullDozer("yellow", "mini");
-            //dozer.color = "yellow";
-            //dozer.size = "mini";
-            Console.WriteLine("Bulldozer 1 is " + dozer.color);
-
-            var dozer2 = new BullDozer("red", "large");
-            //dozer.color = "red";
-            //dozer.size = "large";
-            Console.WriteLine("Bulldozer 2 is " + dozer2.color);
+            var man = new Man();
+            var kart = new Kart();
+            var alien = new Alien();
         }
-        
-        public class BullDozer
-        { 
-            // use a constructor to create a new bulldozer
-            public BullDozer(string _color, string _size) {
-                this.color = _color;
-                this.size = _size;
+
+        public class Man
+        {
+            public Man ()
+            {
+                // constructor
             }
-            
-            public string color { get; set;}
-            public string size { get; set; }
+
+            // define if the man can move or not move
+            public bool move { get; set;}
+            public string name { get; set; }
+            public string color { get; set; }
+        }
+
+        public class Kart
+        {
+            public Kart()
+            {
+                // constructor
+            }
+            public bool move { get; set; }
+            public string manufactor { get; set; }
+            public string color { get; set; }
+        }
+
+        public class Alien
+        {
+            public Alien()
+            {
+                // constructor
+            }
+            public bool move { get; set; }
+            public string planet { get; set; }
+            public string color { get; set; }
         }
     }
 }
