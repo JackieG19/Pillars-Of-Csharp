@@ -6,7 +6,13 @@ namespace Bulldozer
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // create a new bulldozer with the blueprint
+            var dozer = new BullDozer();
+
+            // assign color and size to the bulldozer
+            dozer.color = "yellow";
+            dozer.size = "mini";
+            Console.WriteLine("Bulldozer is " + dozer.color);
         }
         
         public class BullDozer
