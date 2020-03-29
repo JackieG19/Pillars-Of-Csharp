@@ -3,5 +3,3 @@
 Branches 1 - 3
 - Classes, Objects and Constructor
 
-Branch 7 - 10
-- Polymorphism
