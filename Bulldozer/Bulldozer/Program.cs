@@ -2,9 +2,9 @@ using System;
 
 namespace Bulldozer
 {
-      class MainClass
+    class MainClass
     {
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
             var man = new Man();
             var kart = new Kart();
