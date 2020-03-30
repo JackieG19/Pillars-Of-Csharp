@@ -4,23 +4,46 @@ namespace Bulldozer
 {
     class MainClass
     {
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
-            // create a new bulldozer with the blueprint
-            var dozer = new BullDozer();
-
-            // assign color and size to the bulldozer
-            dozer.color = "yellow";
-            dozer.size = "mini";
-            Console.WriteLine("Bulldozer is " + dozer.color);
+            var man = new Man();
+            var kart = new Kart();
+            var alien = new Alien();
         }
-        
-        public class BullDozer
-        { 
-            // 2 properties
-            // define a color and size
-            public string color { get; set;}
-            public string size { get; set; }
+
+        public class Man
+        {
+            public Man ()
+            {
+                // constructor
+            }
+
+            // define if the man can move or not move
+            public bool move { get; set;}
+            public string name { get; set; }
+            public string color { get; set; }
+        }
+
+        public class Kart
+        {
+            public Kart()
+            {
+                // constructor
+            }
+            public bool move { get; set; }
+            public string manufactor { get; set; }
+            public string color { get; set; }
+        }
+
+        public class Alien
+        {
+            public Alien()
+            {
+                // constructor
+            }
+            public bool move { get; set; }
+            public string planet { get; set; }
+            public string color { get; set; }
         }
     }
 }
