@@ -7,9 +7,6 @@ namespace Bulldozer
         public static void Main(string[] args)
         {
         }
-
-        public class Workers
-        {   
             public Workers()
             {   
                 // constructor
@@ -21,11 +18,9 @@ namespace Bulldozer
             // if total is equal to null is not ready yet
             if (Total == null)
                 Total = 0;
-           
 
             Total = Total + number;
             Console.WriteLine(Total.ToString());
-
         }
 
         // to store the number and add it, create a class variable
