@@ -10,9 +10,6 @@ namespace Bulldozer
             worker.Count(4);
             worker.Count(5);
         }
-
-        public class Workers
-        {   
             public Workers()
             {   
                 // constructor
@@ -24,10 +21,9 @@ namespace Bulldozer
             if (Total == null)
             {
                 Total = 0;
-            }
+              
             Total = Total + number;
             Console.WriteLine(Total.ToString());
-
         }
 
         // so every time Count is run adds one to the Total
