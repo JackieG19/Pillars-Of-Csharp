@@ -9,6 +9,8 @@ namespace Bulldozer
             var worker = new Workers();
             worker.Count(4);
             worker.Count(5);
+            
+            worker.Count(4.5f); // run error
         }
             public Workers()
             {   
@@ -21,12 +23,23 @@ namespace Bulldozer
             if (Total == null)
             {
                 Total = 0;
-              
+            }
+          
+            //Total = Total + number;
+            Total = Total + Convert.ToSingle(number);
+            Console.WriteLine(Total.ToString());
+        }
+    
+        // ***NOTE*** Don't name your methods the same - exception: putting a different type of variable
+
+        // this method is only called whenever the main program passed a float
+        public void Count(float number)
+        {
             Total = Total + number;
             Console.WriteLine(Total.ToString());
         }
-
-        // so every time Count is run adds one to the Total
-        public int Total { get; set; }
+        
+        // public int Total { get; set; }
+        public float Total { get; set; }
     }
 }
