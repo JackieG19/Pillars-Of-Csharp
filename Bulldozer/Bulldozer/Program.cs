@@ -12,9 +12,6 @@ namespace Bulldozer
             
             worker.Count(4.5f); // run error
         }
-
-        public class Workers
-        {   
             public Workers()
             {   
                 // constructor
@@ -27,11 +24,10 @@ namespace Bulldozer
             {
                 Total = 0;
             }
-            
+          
             //Total = Total + number;
             Total = Total + Convert.ToSingle(number);
             Console.WriteLine(Total.ToString());
-
         }
     
         // ***NOTE*** Don't name your methods the same - exception: putting a different type of variable
